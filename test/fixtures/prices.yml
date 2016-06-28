@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  money: 1.5
+  money1: 9.99
+  money2: 
+
+two:
+  money: 1.5
+  money1: 9.99
+  money2: 

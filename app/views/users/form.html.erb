@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |msg| %>
+            <p><%= msg %></p>
+    <% end %>
+<% end %>
+<%= form_for @user do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_field :lastname %>
+    <%= f.submit "OK" %>
+<% end %>
+
+<%= link_to "Facebook login" , "http://localhost:3000/oauth/authorize?username=user@example.com&password=doorkeeper&response_type=password" %>

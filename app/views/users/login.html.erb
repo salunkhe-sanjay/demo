@@ -1,0 +1,5 @@
+<%= form_for @user , :url => {:action => "check_login" , :controller => "users" } do |f| %>
+<%= f.text_field :name %>
+<%= f.text_field :lastname %>
+<%= f.submit "Login" %>
+<% end %>
